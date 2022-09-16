@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int q[20],top=-1,front=-1,rear=-1,a[20][20],vis[20],stack[20];
 int delete();
 void add(int item);
@@ -57,9 +56,6 @@ scanf("%c",&dummy);
 scanf("%c",&c);
 }while((c=='y')||(c=='Y'));
 }
-
-
-//**************BFS(breadth-first search) code**************//
 void bfs(int s,int n)
 {
 int p,i;
@@ -112,9 +108,6 @@ k=q[front++];
 return(k);
 }
 }
-
-
-//***************DFS(depth-first search) code******************//
 void dfs(int s,int n)
 {
 int i,k;
