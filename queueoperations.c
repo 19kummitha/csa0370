@@ -7,7 +7,7 @@ int que[SIZE];
 void enqueue()
 {
     if(r==SIZE-1)
-        printf("the stack is full");
+        printf("the queue is full");
     else
     {
         if(f==-1)
@@ -24,7 +24,7 @@ void dequeue()
     int ele;
 
     if(f==-1 || f>r)
-        printf("the stack is empty");
+        printf("the queue is empty");
     else
      {
         ele=que[f];
@@ -36,7 +36,7 @@ void display()
 {
     int i;
     if(f==-1)
-        printf("stack is empty");
+        printf("queue is empty");
     else
         for(i=f;i<=r;i++)
         {
